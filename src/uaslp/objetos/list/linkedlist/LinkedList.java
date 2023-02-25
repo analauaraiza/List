@@ -1,6 +1,6 @@
 package uaslp.objetos.list.linkedlist;
 
-public class Linkedlist{
+public class LinkedList {
     private Node head;
     private Node tail;
     private int size;
@@ -34,6 +34,27 @@ public class Linkedlist{
         size++;
     }
 
+    public void remove(int index){
+        Node currentNode = head;
+        int i=0;
+        while(currentNode.getNext() != null){
+            if(currentNode.getNext().equals(index)){
+                if(currentNode.getPrevious() == null){
+                    head.setNext(currentNode.getNext());
+                }else{
+                    currentNode.setPrevious(currentNode.getNext());
+                }
+            }
+            i++;
+        }
+    }
+
+    public void removeAll(){
+        while(getSize() > 0){
+            head = null;
+            tail = null;
+        }
+    }
 
     public String getAt(int index) {
         if (index < 0 || index >= size) {

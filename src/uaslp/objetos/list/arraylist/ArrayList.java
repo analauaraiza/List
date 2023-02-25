@@ -5,7 +5,7 @@ import uaslp.objetos.list.linkedlist.LinkedListIterator;
 public class ArrayList {
     private static final int INITIAL_SIZE = 2;
     private String []array;
-    private int size; //cuantos se han insertado al arreglo
+    private int size;
 
     public ArrayList(){
         array = new String[INITIAL_SIZE];
@@ -38,36 +38,57 @@ public class ArrayList {
         if(size == array.length){
             increaseSize();
         }
+        for(int i = size-1; i >= 1; i--){
+            array[i] = array[i-1];
+        }
         array[0]= data;
         size++;
     }
 
-    public  void remove(String index){
+    public  void remove(int index){
+        if(index < 0 || index >= size){
+            return;
+        }
         for(int i=0; i< array.length; i++){
-            if(index == array[i]){
-                remove(index);
+            if(index == i){
+                array[index] = null;
             }
             size--;
         }
     }
 
     public void removeAll(){
-        for(int i=0; i< array.length; i++){
+        for(int i=0; i < array.length; i++){
             array[i]=null;
         }
+        size = 0;
     }
 
-    public void setAt(String index, String data){
-        this.addAtTail(data);
-        this.remove(index);
+    public void setAt(int index, String data){
+        if(index < 0 || index >= size){
+            return;
+        }
+        array[index] = data;
     }
 
-    public String getAt(String index){
+    public int getAt(int index){
         return index;
     }
 
+    public void removeAllWithValue(String data){
+        for(int i=0; i < array.length; i++){
+            if(array[i].equals(data)){
+                array[i] = null;
+            }
+        }
+        size--;
+        for(int index=0; index < size; index++){
+            array[index]=array[index];
+        }
+    }
+
     public ArrayListIterator getIterator(){
-        return new ArrayListIterator();
+        return new ArrayListIterator(this);
     }
 
 

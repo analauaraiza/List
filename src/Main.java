@@ -1,11 +1,11 @@
 import uaslp.objetos.list.linkedlist.LinkedListIterator;
-import uaslp.objetos.list.linkedlist.Linkedlist;
+import uaslp.objetos.list.linkedlist.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        Linkedlist linkedlist = new Linkedlist();
+        LinkedList linkedlist = new LinkedList();
 
         System.out.println(linkedlist.getSize());
 

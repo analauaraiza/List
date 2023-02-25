@@ -2,13 +2,18 @@ package uaslp.objetos.list.arraylist;
 
 public class ArrayListIterator {
 
-    private String []array;
-
+    private ArrayList arrayList;
+    private int currentIndex;
+    public ArrayListIterator(ArrayList arrayList){
+        this.arrayList=arrayList;
+    }
     public boolean hasNext(){
-        return array[0]!=null;
+        return currentIndex < arrayList.getSize();
     }
 
-    public void next(){
-        String data;
+    public int next(){
+        int current = arrayList.getAt(currentIndex);
+        currentIndex++;
+        return current;
     }
 }
