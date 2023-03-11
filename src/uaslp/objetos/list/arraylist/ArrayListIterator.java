@@ -1,6 +1,8 @@
 package uaslp.objetos.list.arraylist;
 
-public class ArrayListIterator {
+import uaslp.objetos.list.Iterator;
+
+public class ArrayListIterator implements Iterator {
 
     private ArrayList arrayList;
     private int currentIndex;
@@ -11,8 +13,8 @@ public class ArrayListIterator {
         return currentIndex < arrayList.getSize();
     }
 
-    public int next(){
-        int current = arrayList.getAt(currentIndex);
+    public String next(){
+        String current = arrayList.getAt(currentIndex);
         currentIndex++;
         return current;
     }

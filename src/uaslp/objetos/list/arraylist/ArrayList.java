@@ -1,8 +1,9 @@
 package uaslp.objetos.list.arraylist;
 
-import uaslp.objetos.list.linkedlist.LinkedListIterator;
+import uaslp.objetos.list.List;
 
-public class ArrayList {
+
+public class ArrayList implements List{
     private static final int INITIAL_SIZE = 2;
     private String []array;
     private int size;
@@ -71,8 +72,8 @@ public class ArrayList {
         array[index] = data;
     }
 
-    public int getAt(int index){
-        return index;
+    public String getAt(int index){
+        return array[index];
     }
 
     public void removeAllWithValue(String data){
