@@ -14,6 +14,7 @@ public class Main {
         list1.addAtTail("A");
         list1.addAtTail("B");
         list1.addAtTail("C");
+        list1.addAtTail("D");
 
 
         Iterator iterator = list1.getIterator();
