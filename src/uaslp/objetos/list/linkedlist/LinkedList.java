@@ -3,15 +3,14 @@ package uaslp.objetos.list.linkedlist;
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
 
-public class LinkedList implements List {
-    private Node head;
-    private Node tail;
+public class LinkedList<T> implements List<T> {
+    private Node<T> head;
+    private Node<T> tail;
     private int size;
 
-    public void addAtTail(String data) {
-        Node node = new Node();
+    public void addAtTail(T data) {
+        Node<T> node = new Node<>();
 
-        node.setData(data);
 
         if (size == 0) {
             head = node;
@@ -23,12 +22,11 @@ public class LinkedList implements List {
         size++;
     }
 
-    public void addAtFront(String data){
-        Node node = new Node();
-        node.setData(data);
+    public void addAtFront(T data){
+        Node<T> node = new Node<>();
 
         if(size == 0){
-            head = node;
+            tail = node;
         }else{
             node.setPrevious(head);
             head.setNext(node);
@@ -49,6 +47,7 @@ public class LinkedList implements List {
                 }
             }
             i++;
+            size--;
         }
     }
 
@@ -58,24 +57,31 @@ public class LinkedList implements List {
             tail = null;
         }
     }
-    public void removeAllWithValue(String data){
-        Iterator iterator = getIterator();
+    public void removeAllWithValue(T data){
+        Iterator<T> iterator = getIterator();
+        Node<T> node=head;
+        while(iterator.hasNext()){
+            if(data == iterator.next()){
+                node.previous.next = node.next;
+                node.next.previous = node.previous;
+            }
+        }
 
     }
 
-    public String getAt(int index) {
+    public T getAt(int index) {
         if (index < 0 || index >= size) {
             return null;
         }
-        Node currentNode = head;
+        Node<T> currentNode = head;
         for (int currentIndex = 0; currentIndex < index; currentIndex++) {
             currentNode = currentNode.next;
         }
         return currentNode.data;
     }
 
-    public void setAt(int index, String data){
-        Iterator iterator = getIterator();
+    public void setAt(int index, T data){
+        Iterator<T> iterator = getIterator();
         int current_index = 0;
 
         while(iterator.hasNext() && current_index != index) {
@@ -88,9 +94,10 @@ public class LinkedList implements List {
         return size;
     }
 
-    public Iterator getIterator(){
-        return new LinkedListIterator(head);
+    public Iterator<T> getIterator(){
+        return new LinkedListIterator<>(head);
     }
+
 
 
 

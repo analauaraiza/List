@@ -1,18 +1,17 @@
 package uaslp.objetos.list.arraylist;
-
 import uaslp.objetos.list.List;
 
 
-public class ArrayList implements List{
+public class ArrayList<T> implements List<T>{
     private static final int INITIAL_SIZE = 2;
-    private String []array;
+    private T []array;
     private int size;
 
     public ArrayList(){
-        array = new String[INITIAL_SIZE];
+        array = (T[])(new Object[INITIAL_SIZE]);
     }
 
-    public void addAtTail(String data){
+    public void addAtTail(T data){
         if(size == array.length){
            increaseSize();
         }
@@ -27,7 +26,7 @@ public class ArrayList implements List{
     }
 
     private void increaseSize(){
-        String []newArray = new String[array.length*2];
+        T []newArray = (T[])new String[array.length*2];
 
         for(int i=0; i< array.length; i++){
             newArray[i]=array[i];
@@ -35,7 +34,7 @@ public class ArrayList implements List{
         array = newArray;
     }
 
-    public void addAtFront(String data){
+    public void addAtFront(T data){
         if(size == array.length){
             increaseSize();
         }
@@ -59,24 +58,22 @@ public class ArrayList implements List{
     }
 
     public void removeAll(){
-        for(int i=0; i < array.length; i++){
-            array[i]=null;
-        }
+        array = (T[])(new Object[INITIAL_SIZE]);
         size = 0;
     }
 
-    public void setAt(int index, String data){
+    public void setAt(int index, T data){
         if(index < 0 || index >= size){
             return;
         }
         array[index] = data;
     }
 
-    public String getAt(int index){
+    public T getAt(int index){
         return array[index];
     }
 
-    public void removeAllWithValue(String data){
+    public void removeAllWithValue(T data){
         for(int i=0; i < array.length; i++){
             if(array[i].equals(data)){
                 array[i] = null;
@@ -88,8 +85,8 @@ public class ArrayList implements List{
         }
     }
 
-    public ArrayListIterator getIterator(){
-        return new ArrayListIterator(this);
+    public ArrayListIterator<T> getIterator(){
+        return new ArrayListIterator<>(this);
     }
 
 

@@ -1,31 +1,31 @@
 package uaslp.objetos.list.linkedlist;
 
-class Node {
-    String data;
-    Node next;
-    Node previous;
+class Node<T> {
+    T data;
+    Node<T> next;
+    Node<T> previous;
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 
-    public String getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(T data) {
         this.data = data;
     }
 
-    public Node getPrevious() {
+    public Node<T> getPrevious() {
         return previous;
     }
 
-    public void setPrevious(Node previous) {
+    public void setPrevious(Node<T> previous) {
         this.previous = previous;
     }
 }
