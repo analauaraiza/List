@@ -1,5 +1,7 @@
 package uaslp.objetos.list.arraylist;
 import uaslp.objetos.list.List;
+import uaslp.objetos.list.exceptions.BadIndexException;
+import uaslp.objetos.list.exceptions.CollectionsExceptions;
 
 
 public class ArrayList<T> implements List<T>{
@@ -45,10 +47,12 @@ public class ArrayList<T> implements List<T>{
         size++;
     }
 
-    public  void remove(int index){
-        if(index < 0 || index >= size){
-            return;
+    public  void remove(int index) throws BadIndexException {
+
+        if (index < 0 || index >= size) {
+            throw new BadIndexException();
         }
+
         for(int i=0; i< array.length; i++){
             if(index == i){
                 array[index] = null;
