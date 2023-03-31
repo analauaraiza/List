@@ -2,6 +2,7 @@ package uaslp.objetos.list.arraylist;
 import uaslp.objetos.list.List;
 import uaslp.objetos.list.exceptions.BadIndexException;
 import uaslp.objetos.list.exceptions.CollectionsExceptions;
+import uaslp.objetos.list.exceptions.NotNullAllowedException;
 
 
 public class ArrayList<T> implements List<T>{
@@ -13,7 +14,10 @@ public class ArrayList<T> implements List<T>{
         array = (T[])(new Object[INITIAL_SIZE]);
     }
 
-    public void addAtTail(T data){
+    public void addAtTail(T data) throws  NotNullAllowedException{
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
         if(size == array.length){
            increaseSize();
         }
@@ -36,7 +40,10 @@ public class ArrayList<T> implements List<T>{
         array = newArray;
     }
 
-    public void addAtFront(T data){
+    public void addAtFront(T data) throws NotNullAllowedException{
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
         if(size == array.length){
             increaseSize();
         }
@@ -66,9 +73,12 @@ public class ArrayList<T> implements List<T>{
         size = 0;
     }
 
-    public void setAt(int index, T data){
+    public void setAt(int index, T data) throws BadIndexException, NotNullAllowedException{
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
         if(index < 0 || index >= size){
-            return;
+            throw new BadIndexException();
         }
         array[index] = data;
     }

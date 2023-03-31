@@ -10,9 +10,11 @@ public class LinkedList<T> implements List<T> {
     private Node<T> tail;
     private int size;
 
-    public void addAtTail(T data) {
+    public void addAtTail(T data) throws NotNullAllowedException {
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
         Node<T> node = new Node<>();
-
 
         if (size == 0) {
             head = node;
@@ -89,7 +91,13 @@ public class LinkedList<T> implements List<T> {
         return currentNode.data;
     }
 
-    public void setAt(int index, T data){
+    public void setAt(int index, T data)throws BadIndexException, NotNullAllowedException{
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
+        if(index < 0 || index >= size){
+            throw new BadIndexException();
+        }
         Iterator<T> iterator = getIterator();
         int current_index = 0;
 
