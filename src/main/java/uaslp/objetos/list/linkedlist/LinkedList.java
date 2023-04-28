@@ -14,7 +14,7 @@ public class LinkedList<T> implements List<T> {
         if(data == null){
             throw new NotNullAllowedException();
         }
-        Node<T> node = new Node<>();
+        Node<T> node = new Node<>(data);
 
         if (size == 0) {
             head = node;
@@ -31,7 +31,7 @@ public class LinkedList<T> implements List<T> {
         if(data == null){
             throw new NotNullAllowedException();
         }
-        Node<T> node = new Node<>();
+        Node<T> node = new Node<>(data);
 
         if(size == 0){
             tail = node;
@@ -43,13 +43,42 @@ public class LinkedList<T> implements List<T> {
         size++;
     }
 
+
+    public void removeAll(){
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
+
+        while(iterator.hasNext()) {
+            Node<T> temp = iterator.getCurrentNode();
+            iterator.next();
+            if(head == temp && tail == temp){
+                head = null;
+                tail = null;
+            }
+        size = 0;
+        }
+    }
+
+    public void removeAllWithValue(T data){
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
+        while(iterator.hasNext()){
+            Node<T> node = iterator.getCurrentNode();
+            if(node.data.equals(data)){
+                node.previous.next = node.next;
+                node.next.previous = node.previous;
+                size--;
+            }
+            iterator.next();
+        }
+
+    }
+
     public void remove(int index) throws BadIndexException{
         Node currentNode = head;
         int i=0;
         if (index < 0 || index >= size) {
             throw new BadIndexException();
         }
-        while(currentNode.getNext() != null){
+        /*while(currentNode.getNext() != null){
             if(currentNode.getNext().equals(index)){
                 if(currentNode.getPrevious() == null){
                     head.setNext(currentNode.getNext());
@@ -59,36 +88,21 @@ public class LinkedList<T> implements List<T> {
             }
             i++;
             size--;
-        }
-    }
-
-    public void removeAll(){
-        while(getSize() > 0){
-            head = null;
-            tail = null;
-        }
-    }
-    public void removeAllWithValue(T data){
-        Iterator<T> iterator = getIterator();
-        Node<T> node=head;
-        while(iterator.hasNext()){
-            if(data == iterator.next()){
-                node.previous.next = node.next;
-                node.next.previous = node.previous;
-            }
-        }
-
+        }*/
     }
 
     public T getAt(int index) {
         if (index < 0 || index >= size) {
             return null;
         }
-        Node<T> currentNode = head;
-        for (int currentIndex = 0; currentIndex < index; currentIndex++) {
-            currentNode = currentNode.next;
+        Iterator<T> iterator = getIterator();
+        int currentIndex = 0;
+
+        while(iterator.hasNext() && currentIndex != index) {
+            iterator.next();
+            currentIndex++;
         }
-        return currentNode.data;
+        return iterator.next();
     }
 
     public void setAt(int index, T data)throws BadIndexException, NotNullAllowedException{

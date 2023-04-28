@@ -18,5 +18,8 @@ public class LinkedListIterator<T> implements Iterator<T> {
         return value;
     }
 
+    public Node<T> getCurrentNode() {
+        return currentNode;
+    }
 
 }

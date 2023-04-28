@@ -8,7 +8,7 @@ import uaslp.objetos.list.exceptions.CollectionsExceptions;
 import uaslp.objetos.list.exceptions.NotNullAllowedException;
 import uaslp.objetos.list.linkedlist.LinkedList;
 
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
 
