@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14282660-4127-41d3-8064-1795f1cde7ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/arraylist/ArrayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.iml" beforeDir="false" afterPath="$PROJECT_DIR$/List.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/arraylist/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/arraylist/ArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/prueba-maven-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/prueba-maven-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-uaslp.objetos.list.linkedlist.LinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-uaslp.objetos.list.linkedlist.LinkedListTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/uaslp.objetos.list.linkedlist.LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/uaslp.objetos.list.linkedlist.LinkedListTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,81 +70,81 @@
       <recent name="C:\TOO\List\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest (1)">
-    <configuration name="LinkedListTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAListWithIsDifferentNull_whenRemove_thenElementIsRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAList_whenRemoveWithValue_thenElementIsRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAListWithIsDifferentNull_whenRemove_thenElementIsRemoved" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAList_whenRemoveWithValue_thenElementIsRemoved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAList_whenGetAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAList_whenSetAt_thenIndexIsEqualsData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAList_whenGetAtIndex" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAList_whenSetAt_thenIndexIsEqualsData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAList_whenSetAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAnEmptyList_whenSetAt_thenExceptionIsBadIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAList_whenSetAtIndex" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAnEmptyList_whenSetAt_thenExceptionIsBadIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAList_whenSetAt_thenExceptionIsThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAnEmptyList_whenSetAt_thenExceptionIsNotThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAList_whenSetAt_thenExceptionIsThrown" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAnEmptyList_whenSetAt_thenExceptionIsNotThrown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTest (1)" />
-        <item itemvalue="JUnit.LinkedListTest.givenAListWithIsDifferentNull_whenRemove_thenElementIsRemoved" />
-        <item itemvalue="JUnit.LinkedListTest.givenAList_whenSetAtIndex" />
-        <item itemvalue="JUnit.LinkedListTest.givenAList_whenSetAt_thenExceptionIsThrown" />
-        <item itemvalue="JUnit.LinkedListTest.givenAList_whenGetAtIndex" />
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="JUnit.ArrayListTest.givenAList_whenRemoveWithValue_thenElementIsRemoved" />
+        <item itemvalue="JUnit.ArrayListTest.givenAList_whenSetAt_thenIndexIsEqualsData" />
+        <item itemvalue="JUnit.ArrayListTest.givenAnEmptyList_whenSetAt_thenExceptionIsBadIndex" />
+        <item itemvalue="JUnit.ArrayListTest.givenAnEmptyList_whenSetAt_thenExceptionIsNotThrown" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +199,16 @@
           <line>13</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java</url>
           <line>188</line>
@@ -230,11 +228,14 @@
     <SUITE FILE_PATH="coverage/List$LinkedListTest_whenListIsCreated_thenSizeIsZero__1_.ic" NAME="LinkedListTest.whenListIsCreated_thenSizeIsZero (1) Coverage Results" MODIFIED="1682552117674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/List$LinkedListTest__1_.ic" NAME="LinkedListTest (1) Coverage Results" MODIFIED="1682647404239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/List$LinkedListTest__1_.ic" NAME="LinkedListTest (1) Coverage Results" MODIFIED="1682647612495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/List$LinkedListTest_whenListIsCreated_thenSizeIsZero.ic" NAME="LinkedListTest.whenListIsCreated_thenSizeIsZero Coverage Results" MODIFIED="1682551416249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>objetos.list.linkedlist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/List$ArrayListTest.ic" NAME="ArrayListTest Coverage Results" MODIFIED="1682799642488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
     </SUITE>
   </component>
 </project>

@@ -1,4 +1,5 @@
 package uaslp.objetos.list.arraylist;
+import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
 import uaslp.objetos.list.exceptions.BadIndexException;
 import uaslp.objetos.list.exceptions.CollectionsExceptions;
@@ -63,8 +64,8 @@ public class ArrayList<T> implements List<T>{
         for(int i=0; i< array.length; i++){
             if(index == i){
                 array[index] = null;
+                size--;
             }
-            size--;
         }
     }
 
@@ -81,6 +82,7 @@ public class ArrayList<T> implements List<T>{
             throw new BadIndexException();
         }
         array[index] = data;
+
     }
 
     public T getAt(int index){
@@ -88,16 +90,15 @@ public class ArrayList<T> implements List<T>{
     }
 
     public void removeAllWithValue(T data){
-        for(int i=0; i < array.length; i++){
-            if(array[i].equals(data)){
-                array[i] = null;
+        ArrayListIterator <T> iterator = getIterator();
+        int currentIndex = 0;
+        while(iterator.hasNext() && array[currentIndex] != data){
+            if(array[currentIndex].equals(data))
+                array[currentIndex] = null;
             }
-        }
         size--;
-        for(int index=0; index < size; index++){
-            array[index]=array[index];
-        }
     }
+
 
     public ArrayListIterator<T> getIterator(){
         return new ArrayListIterator<>(this);

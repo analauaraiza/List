@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uaslp.objetos.list.linkedlist.LinkedListTest" time="0.002" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uaslp.objetos.list.arraylist.ArrayListTest" time="0.086" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,21 +59,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="givenAListWithOneElement_whenRemoveAll_thenElementIsRemoved" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAListWithXElements_whenRemoveAll_thenElementsAreRemoved" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAnEmptyList_whenAddAtTail_thenElementIsInserted" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenRemove_thenElementsAreRemoved" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAListWithIsDifferentNull_whenRemove_thenElementIsRemoved" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAListWithValue_whenRemoveWithValue_thenElementIsRemoved" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenGetAtIndex" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenAddAtTailNullValue_thenExceptionIsThrown" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenAddAtFrontNullValue_thenExceptionIsThrown" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenANonEmptyList_whenAddAtTail_thenElementIsInserted" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAnEmptyList_whenAddAtFront_thenElementIsInserted" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenRemoveWrongIndex_thenExceptionIsThrown" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenGetAtIndexInvalid" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="whenListIsCreated_thenSizeIsZero" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenSetAt_thenExceptionIsThrown" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenAList_whenSetAtIndex" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
-  <testcase name="givenANonEmptyList_whenAddAtFront_thenElementIsInserted" classname="uaslp.objetos.list.linkedlist.LinkedListTest" time="0"/>
+  <testcase name="givenAList_whenAddAtFront_thenElementIsInserted" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.046"/>
+  <testcase name="givenAList_whenRemoveAll_thenElementsAreRemoved" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0"/>
+  <testcase name="givenAnEmptyList_whenRemove_thenExceptionIsBad" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.004"/>
+  <testcase name="givenAnEmptyList_whenAddAtTail_thenElementIsInserted" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.002"/>
+  <testcase name="whenListIsCreated_thenSizeIsZero1" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0"/>
+  <testcase name="givenAList_whenAddAtTail_thenArrayIsFull" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.002"/>
+  <testcase name="givenAList_whenAddAtFront_thenArrayIsFull" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0"/>
+  <testcase name="givenAnEmptyList_whenSetAt_thenExceptionIsBadIndex" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.002"/>
+  <testcase name="givenAList_whenRemoveWithValue_thenElementIsRemoved" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.001"/>
+  <testcase name="givenAnEmptyList_whenSetAt_thenExceptionIsNotThrown" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.001"/>
+  <testcase name="givenAList_whenAddAtTailNullValue_thenExceptionIsThrown" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.002"/>
+  <testcase name="givenAList_whenAddAtFrontNullValue_thenExceptionIsThrown" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.003"/>
+  <testcase name="givenAList_whenSetAt_thenIndexIsEqualsData" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.001"/>
+  <testcase name="givenAList_whenRemove_thenElementIsRemoved" classname="uaslp.objetos.list.arraylist.ArrayListTest" time="0.001"/>
 </testsuite>
